@@ -1,0 +1,35 @@
+{
+  "env": {
+    "development": { // app dev
+      "presets": [
+        "react-native"
+      ]
+    },
+    "web": {
+      "plugins": [
+        [
+          "module-resolver", {
+          "root": ["."],
+          "alias": {
+            "styles": "./styles",
+            "react-native": "react-native-web"
+          },
+          "cwd": "babelrc"
+        }],
+        [
+          "wrap-in-js",
+          {
+            "extensions": ["css$", "scss$"]
+          }
+        ],
+        ["transform-react-inline-elements", { "spec": true }],
+        ["transform-class-properties", { "spec": true }]
+      ],
+      "presets": [
+        "react-native"
+      ]
+    }
+  },
+
+  "ignore": []
+}
