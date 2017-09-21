@@ -1,4 +1,4 @@
-# rnmeetup-21092017
+# React Native Meetup - 21.09.2017
 React Native Meetup Talk about React Native Web by Christoph Byza
 
 
